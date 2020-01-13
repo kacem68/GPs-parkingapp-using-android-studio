@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:background="@android:color/background_light"
+    android:padding="5dp"
+    android:id="@+id/row_table_parking"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/id_parking_P"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/designation_paking_P"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/proprietaire_parking_P"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/date_ajout_parking_P"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/place_P"
+        ></TextView>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:baselineAlignBottom="false"
+        android:contentDescription="Modifier"
+        android:src="@drawable/edit5"
+        android:id="@+id/btn_modifier"
+        ></ImageButton>
+
+
+
+</TableRow>

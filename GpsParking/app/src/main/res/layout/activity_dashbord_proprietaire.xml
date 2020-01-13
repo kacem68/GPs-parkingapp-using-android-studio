@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashbordProprietaireActivity"
+    android:id="@+id/parent_layout"
+    android:background="#FFD740"
+    >
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FFFFFF"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        >
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_gravity="center"
+            android:text="Tableau de Bord"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_parking_P"
+        android:layout_width="166dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="100dp"
+
+        android:background="#FF6E40"
+        app:cardBackgroundColor="#F8F3F3"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="45dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4mm"
+            android:text="Paking"
+            android:textAlignment="center"
+            android:textColor="#0A0A0A"
+            android:textColorHint="#EEFF41"
+            android:textSize="24dp"
+            android:textStyle="bold"></TextView>
+        <View
+
+            android:id="@+id/divider2"
+            android:layout_width="145dp"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:background="#161615"
+
+            />
+        <TextView
+            android:id="@+id/viewtext_parking_valide_P"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="14mm"
+            android:layout_marginLeft="2mm"
+            android:text="10"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/btn_liste_parking_P"
+            android:layout_width="10mm"
+            android:layout_height="6mm"
+            android:layout_gravity="right"
+            android:layout_marginTop="13mm"
+            android:layout_marginRight="2mm"
+            android:text="Liste"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_rounded_blue"
+            android:onClick="Accder"
+            ></Button>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_places_P"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:layout_gravity="center_horizontal"
+
+        android:background="#FF6E40"
+        app:cardBackgroundColor="#F8F3F3"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="45dp"
+        >
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4mm"
+            android:text="Places"
+            android:textAlignment="center"
+            android:textColor="#0A0A0A"
+            android:textColorHint="#EEFF41"
+            android:textSize="24dp"
+            android:textStyle="bold"
+
+            ></TextView>
+
+        <View
+
+            android:id="@+id/divider4"
+            android:layout_width="336dp"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:background="#161615"
+
+            />
+        <TextView
+            android:id="@+id/viewtext_places_vides_P"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="14mm"
+            android:layout_marginRight="10dp"
+            android:text="10"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="14mm"
+            android:layout_marginLeft="10dp"
+            android:text="Occupée"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            />
+
+
+        <TextView
+            android:id="@+id/viewtext_places_occupes_P"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="19mm"
+            android:layout_marginRight="10dp"
+            android:text="10"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="19mm"
+            android:layout_marginLeft="10dp"
+            android:text="Vides"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_Incidents"
+        android:layout_width="166dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        app:cardBackgroundColor="#F8F3F3"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="45dp"
+        android:layout_gravity="right"
+        >
+
+        <TextView
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4mm"
+            android:text="Incidents"
+            android:textAlignment="center"
+            android:textColor="#0A0A0A"
+            android:textColorHint="#EEFF41"
+            android:textSize="24dp"
+            android:textStyle="bold"></TextView>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="145dp"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:background="#161615"
+            />
+
+
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_new_demandes"
+        android:layout_width="82dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="80dp"
+        android:background="@android:color/holo_red_light"
+        app:cardBackgroundColor="@android:color/holo_red_light"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Nouveau"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"></TextView>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gpsparking">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Notation" android:theme="@style/Theme.AppCompat.Dialog" ></activity>
+        <activity
+            android:name=".AddDemandes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Profil"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ModifyParking"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ProfilActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ReservationActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MesParkingActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DashbordProprietaireActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddPArkinActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ConducteurActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DemandesActivity"
+            android:label="Demandes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ProprietaireActivity"
+            android:label="Propriété"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ParkingActivity"
+            android:label="Parking"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AboonesActivity"
+            android:label="Abonnés"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ParkingNonValideActivity"
+            android:label="InvalidParking"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Map"
+            android:label="Position du Parking"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity
+            android:name=".InscriptionActivity"
+            android:label="Inscription"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DashBordActivity"
+            android:label="Dashbord"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

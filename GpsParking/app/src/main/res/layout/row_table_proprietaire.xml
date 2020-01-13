@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+
+android:background="@android:color/background_light"
+android:padding="5dp"
+android:id="@+id/row_table_proprietaire"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/id_proprietaire"
+        ></TextView>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="Zbair"
+    android:id="@+id/nom_proprietaire"
+    ></TextView>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="Abdo"
+    android:id="@+id/prenom_proprietaire"
+
+    ></TextView>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="Q299140"
+    android:id="@+id/cin_propriateire"
+
+    ></TextView>
+
+
+
+<ImageButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:baselineAlignBottom="false"
+    android:contentDescription="Supprimer"
+    android:src="@drawable/delete3"
+    android:id="@+id/btn_action_proprietaire"
+
+    ></ImageButton>
+
+
+</TableRow>

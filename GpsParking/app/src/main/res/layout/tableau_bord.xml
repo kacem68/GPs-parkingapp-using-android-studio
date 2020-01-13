@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".DashBordActivity"
+    android:id="@+id/content_layout"
+    tools:showIn="@layout/activity_admin"
+
+    >
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_parking_valides"
+        android:layout_width="166dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="100dp"
+
+        android:background="#FF6E40"
+        app:cardBackgroundColor="#F8F3F3"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="45dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4mm"
+            android:text="Paking"
+            android:textAlignment="center"
+            android:textColor="#0A0A0A"
+            android:textColorHint="#EEFF41"
+            android:textSize="24dp"
+            android:textStyle="bold"></TextView>
+        <View
+
+            android:id="@+id/divider2"
+            android:layout_width="145dp"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:background="#161615"
+
+            />
+        <TextView
+            android:id="@+id/viewtext_parking_valide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="14mm"
+            android:layout_marginLeft="2mm"
+            android:text="10"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/btn_liste_parking_valides"
+            android:layout_width="10mm"
+            android:layout_height="6mm"
+            android:layout_gravity="right"
+            android:layout_marginTop="13mm"
+            android:layout_marginRight="2mm"
+            android:text="Liste"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_rounded_blue"
+            ></Button>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_proprietaire"
+        android:layout_width="166dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="300dp"
+        android:background="#FF6E40"
+        app:cardBackgroundColor="#F8F3F3"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="45dp"
+        app:layout_constraintStart_toEndOf="@id/card_parking_nonvalides"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+
+        <TextView
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4mm"
+
+            android:text="Propriétaires"
+            android:textAlignment="center"
+            android:textColor="#0A0A0A"
+            android:textColorHint="#EEFF41"
+            android:textSize="24dp"
+            android:textStyle="bold"></TextView>
+
+        <View
+
+            android:id="@+id/divider5"
+            android:layout_width="145dp"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:background="#161615"
+
+            />
+
+        <TextView
+            android:id="@+id/viewtext_nombre_proprietaire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="2mm"
+            android:layout_marginTop="14mm"
+            android:text="10"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_liste_proprietaire"
+            android:layout_width="10mm"
+            android:layout_height="6mm"
+            android:layout_gravity="right"
+            android:layout_marginTop="13mm"
+            android:layout_marginRight="2mm"
+            android:background="@drawable/btn_rounded_blue"
+            android:text="Liste"
+            android:textColor="@android:color/white"></Button>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_abonnes"
+        android:layout_width="166dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="500dp"
+        android:background="#FF6E40"
+        app:cardBackgroundColor="#F8F3F3"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="45dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4mm"
+            android:text="Abonnés"
+            android:textAlignment="center"
+            android:textColor="#0A0A0A"
+            android:textColorHint="#EEFF41"
+            android:textSize="24dp"
+            android:textStyle="bold"></TextView>
+        <View
+
+            android:id="@+id/divider6"
+            android:layout_width="145dp"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:background="#161615"
+
+            />
+        <TextView
+            android:id="@+id/viewtext_abonnes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="14mm"
+            android:layout_marginLeft="2mm"
+            android:text="10"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/btn_liste_abonnes"
+            android:layout_width="10mm"
+            android:layout_height="6mm"
+            android:layout_gravity="right"
+            android:layout_marginTop="13mm"
+            android:layout_marginRight="2mm"
+            android:text="Liste"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_rounded_blue"
+            ></Button>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_demandes"
+        android:layout_width="166dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        app:cardBackgroundColor="#F8F3F3"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/card_parking_valides"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4mm"
+            android:text="Demandes"
+            android:textAlignment="center"
+            android:textColor="#0A0A0A"
+            android:textColorHint="#EEFF41"
+            android:textSize="24dp"
+            android:textStyle="bold"></TextView>
+
+        <View
+
+            android:id="@+id/divider"
+            android:layout_width="145dp"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:background="#161615"
+
+            />
+
+        <TextView
+            android:id="@+id/traite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="13mm"
+            android:layout_marginRight="2mm"
+            android:text="20 traitées"
+            android:textSize="15dp"
+            >
+
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_demandes_non_traite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="16.5mm"
+            android:layout_marginRight="2mm"
+            android:text="20 non traitées"
+            android:textSize="15dp"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_parkig_valid"
+        android:layout_width="82dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="80dp"
+        android:background="#FF00E676"
+        app:cardBackgroundColor="#FF00E676"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Valides"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"></TextView>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_new_nobre_demandes"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="333dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/cercle"
+        app:cardBackgroundColor="@android:color/holo_blue_light"
+        app:cardCornerRadius="17.5dp"
+        app:cardElevation="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:id="@+id/txt_nombre_demandes_non_traites"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"></TextView>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_new_nobre_parking"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/cercle"
+        app:cardBackgroundColor="@android:color/holo_blue_light"
+        app:cardCornerRadius="17.5dp"
+        app:cardElevation="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:id="@+id/txt_nombre_parking_non_valides"
+            ></TextView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_icon_propriétaire"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="280dp"
+        app:cardCornerRadius="17.5dp"
+        app:cardElevation="50dp"
+        app:layout_constraintStart_toEndOf="@id/card_parking_nonvalides"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_person"
+            android:layout_gravity="center"
+
+            ></ImageView>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_new_demandes"
+        android:layout_width="82dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="80dp"
+        android:background="@android:color/holo_red_light"
+        app:cardBackgroundColor="@android:color/holo_red_light"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Nouveau"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:id="@+id/noouvelle_demande"
+            ></TextView>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_new_parking"
+        android:layout_width="82dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="280dp"
+        android:background="@android:color/holo_red_light"
+        app:cardBackgroundColor="@android:color/holo_red_light"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Nouveau"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"></TextView>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_parking_nonvalides"
+        android:layout_width="166dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="300dp"
+        android:background="#FF6E40"
+        app:cardBackgroundColor="#F8F3F3"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="45dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4mm"
+            android:text="Paking"
+            android:textAlignment="center"
+            android:textColor="#0A0A0A"
+            android:textColorHint="#EEFF41"
+            android:textSize="24dp"
+            android:textStyle="bold"></TextView>
+        <View
+
+            android:id="@+id/divider3"
+            android:layout_width="145dp"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:background="#161615"
+
+            />
+
+        <Button
+            android:id="@+id/btn_liste_parking_nonvalides"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="Valider"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_rounded_blue"
+            ></Button>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

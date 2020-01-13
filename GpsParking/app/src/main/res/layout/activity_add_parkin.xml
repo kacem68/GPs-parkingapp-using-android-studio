@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPArkinActivity"
+    android:id="@+id/parent_layout"
+    android:background="#FFD740"
+    >
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FFFFFF"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        android:elevation="4mm"
+        >
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_gravity="center"
+            android:text="Ajouter Parking"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/in_designantion"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@android:color/background_light"
+        android:hint="Désignantion"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+
+        >
+
+
+
+    </EditText>
+    <EditText
+        android:id="@+id/in_proprietaire"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:background="@android:color/background_light"
+        android:hint="Propriétaire"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+
+        />
+    <EditText
+        android:id="@+id/in_longitude"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:background="@android:color/background_light"
+        android:hint="Longitude"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:inputType="numberSigned|number|numberDecimal"
+        />
+    <EditText
+        android:id="@+id/in_latitude"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:background="@android:color/background_light"
+        android:hint="Latitude"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:inputType="numberSigned|number|numberDecimal"
+        />
+    <EditText
+        android:id="@+id/in_place"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:background="@android:color/background_light"
+        android:hint="Capacité"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:inputType="number"
+        />
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:background="@android:color/background_light"
+        android:hint="Choisir la date"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/in_date"
+        android:ems="10"
+
+        ></EditText>
+    <TextView
+        android:id="@+id/messge_add_parking"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:text="Remplir tous les champs"
+        android:textColor="@android:color/holo_red_light"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="invisible"
+        ></TextView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_valider"
+        android:text="Ajouter"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="480dp"
+        android:id="@+id/btn_ajouter_parking"
+        ></Button>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
